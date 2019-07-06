@@ -3,4 +3,20 @@
     <string name="custom_toast">Custom Toast</string>
     <string name="snackbar">Snackbar</string>
     <string name="notification_activity">Notification Activity</string>
+    <string name="required_network_type">Required Network Type</string>
+    <string name="none">None</string>
+    <string name="any">Any</string>
+    <string name="wifi">Wifi</string>
+    <string name="requires">Requires</string>
+    <string name="device_idle">Device Idle</string>
+    <string name="device_charging">Device Charging</string>
+    <string name="override_deadline">Override Deadline: </string>
+    <string name="not_set">Not Set</string>
+    <string name="schedule_job">Schedule Job</string>
+    <string name="cancel_jobs">Cancel Job</string>
+    <string name="seconds">%1$d s</string>
+    <string name="job_scheduled">Job Scheduled, will run when the constraints are met</string>
+    <string name="no_constraint_toast">Please set at least one constraint</string>
+    <string name="jobs_canceled">Jobs Canceled</string>
 </resources>
+

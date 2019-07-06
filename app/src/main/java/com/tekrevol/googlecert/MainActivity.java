@@ -1,9 +1,5 @@
 package com.tekrevol.googlecert;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.Fragment;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -14,6 +10,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.Fragment;
+
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     ConstraintLayout contNotification;
     LinearLayout contToast;
     LinearLayout contSnackbar;
+    LinearLayout contJobSchedule;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         contToast = findViewById(R.id.contCustomToast);
         contSnackbar = findViewById(R.id.contSnackbar);
         contNotification = findViewById(R.id.contNotification);
+        contJobSchedule = findViewById(R.id.contJobSchedule);
         setListener();
 
     }
@@ -61,6 +63,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        contJobSchedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity(NotificationJobSchedulerActivity.class);
+            }
+        });
 
 
     }
@@ -83,9 +91,6 @@ public class MainActivity extends AppCompatActivity {
         toast.setView(layout);
         toast.show();
     }
-
-
-
 
 
     private void openMapsActivityForResult(Class<?> tClass, int requestCode) {
