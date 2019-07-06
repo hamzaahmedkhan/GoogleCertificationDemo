@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="custom_toast">اپنی مرضی کے ٹوسٹ</string>
+    <string name="app_name">گوگل سرٹیفیکیشن</string>
+    <string name="snackbar">سنیک بار</string>
+    <string name="notification_activity">اطلاع کی سرگرمی</string>
+</resources>

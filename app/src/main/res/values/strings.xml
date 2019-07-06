@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Google Certification</string>
+    <string name="custom_toast">Custom Toast</string>
+    <string name="snackbar">Snackbar</string>
+    <string name="notification_activity">Notification Activity</string>
+</resources>
