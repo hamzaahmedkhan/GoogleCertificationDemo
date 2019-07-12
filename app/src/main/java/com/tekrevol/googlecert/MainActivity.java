@@ -15,6 +15,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.snackbar.Snackbar;
+import com.tekrevol.googlecert.datamanagement.RoomWordSampleActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,18 +24,28 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout contToast;
     LinearLayout contSnackbar;
     LinearLayout contJobSchedule;
+    LinearLayout contRoomExample;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         parentLayout = findViewById(R.id.parentLayout);
         contToast = findViewById(R.id.contCustomToast);
         contSnackbar = findViewById(R.id.contSnackbar);
         contNotification = findViewById(R.id.contNotification);
         contJobSchedule = findViewById(R.id.contJobSchedule);
+        contRoomExample = findViewById(R.id.contRoomExample);
         setListener();
+
+
+//        SharedPreferences mPreferences = getSharedPreferences("abc", MODE_PRIVATE);
+//        SharedPreferences.Editor edit = mPreferences.edit();
+//        edit.apply();
+//        edit.clear()
 
     }
 
@@ -70,6 +81,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        contRoomExample.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity(RoomWordSampleActivity.class);
+            }
+        });
 
     }
 

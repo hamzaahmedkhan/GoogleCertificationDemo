@@ -12,7 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NotificationJobSchedulerActivity"></activity>
+        <activity
+            android:name=".datamanagement.RoomWordSampleActivity"
+            android:label="@string/title_activity_room_word_sample"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".NotificationJobSchedulerActivity" />
         <activity android:name=".NotificationActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

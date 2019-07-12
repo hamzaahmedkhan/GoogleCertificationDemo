@@ -18,5 +18,6 @@
     <string name="job_scheduled">Job Scheduled, will run when the constraints are met</string>
     <string name="no_constraint_toast">Please set at least one constraint</string>
     <string name="jobs_canceled">Jobs Canceled</string>
+    <string name="title_activity_room_word_sample">RoomWordSample</string>
 </resources>
 
